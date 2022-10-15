@@ -35,30 +35,37 @@ What is more, be aware to disable the MAX_PATH length limit at the end of instal
 Ensure that you have changed the default editor away from vim to  to Notepad.
 Be sure you tick the checkbox to allow Git to be used from 3rd-party software. 
 You are supposed to check the box "Checkout as is, commit as-is". Then be sure to select "Use Windows'default console window", and tick the "Enable experimental support for pseudo consoles" checkbox when installing the Git.
+
 ![a](https://github.com/HaoliangYou/guide-for-sdk-installation/blob/main/5.png)
 
 2. Getthing the SDK and examples
 Create the log in C:\Users\10233\Downloads for myself.
 Input the following code in the Terminal of the PC.
+
 ![a](https://github.com/HaoliangYou/guide-for-sdk-installation/blob/main/6.png)
+
 You will get the result as the following pic if it works well.
+
 ![a](https://github.com/HaoliangYou/guide-for-sdk-installation/blob/main/7.png)
 
 3. Building "Hello World" from the Command Line
 Open a Developer Command Prompt window from the Windows Menu.
 Select Windows->Visual Studio 2022 -> Developer Command Prompt for VS 2022 
 After that, set the path as the following pictures:
+
 ![a](https://github.com/HaoliangYou/guide-for-sdk-installation/blob/main/8.png)
 
 Then, close your current Command Prompt window and open again. Set the environment variables as the following pic.
+
 ![a](https://github.com/HaoliangYou/guide-for-sdk-installation/blob/main/9.png)
 
 You will get the result like the following pic if you build successfully.
+
 ![a](https://github.com/HaoliangYou/guide-for-sdk-installation/blob/main/10.png)
 
 4.Building "Hello World" from Visual Studio Code
 First, install Visual Studio Code and build your projects inside the that environment rather than from the command line
-Select Windows -> Visual Studio 2022 -> Developer Command Prompt for VS2022 from the menu and type C:> code to open the Visual Studio Code with all the correct environment variables
+Select Windows -> Visual Studio 2022 -> Developer Command Prompt for VS2022 from the menu and type C:> code to open the Visual Studio Code with all the correct environment variables.
 Then install the CMake Tools extension. Click the "Add Item" and set  PICO_SDK_PATH as ....\pico-sdk.
 You are also supposed to find "Cmake: Generator" and type in "NMake Makefiles".
 Finally, you can have a try to build it.
@@ -66,10 +73,13 @@ Finally, you can have a try to build it.
 5. Flashing and Running "Hello World"
 Press BOOTSEL andpull it in your usb port and reset you RP2040.
 You can check the detailed information of your serial line in Windows Device Manager as follows.
+
 ![a](https://github.com/HaoliangYou/guide-for-sdk-installation/blob/main/11.png)
+
 Open the PUTTY and set the variable like this.
+
 ![a](https://github.com/HaoliangYou/guide-for-sdk-installation/blob/main/12.png)
+
 Click save and open, you will see the serial as follows!
+
 ![a](https://github.com/HaoliangYou/guide-for-sdk-installation/blob/main/13.png)
-
-
